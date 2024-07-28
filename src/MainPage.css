@@ -1,0 +1,259 @@
+header.MainPage-header {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+}
+
+.Title {
+    position: relative;
+    display: inline;
+}
+
+.MainPage-header h1 {
+    background-color: rgba(224, 142, 210, 0.616);
+    font-size: 180%;
+    width: fit-content;
+    height: fit-content;
+    margin: 420px auto 0 auto;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.MainPage-header h2 {
+    background-color: rgba(241, 140, 224, 0.582);
+    width: fit-content;
+    height: fit-content;
+    margin: 10 auto 0 auto;
+    font-size: 170%;
+    padding: 8px;
+}
+
+div.headerBG {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+div.headerBG img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+div.MainPage-content {
+    background-color: lavender;
+    width: 100%;
+    min-height: fit-content;
+    height: fit-content;
+}
+
+.MainPage-BoxDisplay {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.MainPage-display {
+    margin: 8px;
+    padding: '20px';
+    width: 380px;
+    height: fit-content;
+    transition: 'transform 2.0s ease';
+}
+
+.MainPage-display:hover {
+    transform: translateY(-20px);
+    transform: scale(1.05);
+}
+
+.MainPage-presentation {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+}
+
+#Gladys {
+    background-color: palevioletred;
+}
+
+#Celine {
+    background-color: lightblue;
+}
+
+#Laurence {
+    background-color: pink;
+}
+
+.Info {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Info h2 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+}
+
+.TherapieInfo {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: top;
+    height: fit-content;
+}
+
+.InfoElem:hover {
+    transform: translateY(-20px);
+    transform: scale(1.1);
+}
+
+.InfoElem {
+    width: 20%;
+    min-width: 350px;
+    height: fit-content;
+    justify-content: center;
+    margin: 20px;
+    padding: 8px;
+}
+
+.TitleDialog {
+    text-align: center;
+    color: purple;
+}
+
+.TherapieInfo h3{
+    text-align: center;
+    font-size: 150%;
+}
+
+.contentInfoDialog {
+    width: fit-content;
+    height: fit-content;
+    margin: 15px;
+}
+
+.InfoIllu {
+    width: 100%;
+    height: 300px;
+}
+
+.TherapieInfo strong {
+    color: purple;
+    font-size: 120%;
+}
+
+.Avatar {
+    margin: 5px;
+}
+
+.textSousPresentation {
+    position: relative;
+    display: inline;
+}
+
+.Accompagnement {
+    margin: 8px auto 8px auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 130%;
+}
+
+.PaperAccompagnement {
+    width: fit-content;
+}
+
+.PaperAccompagnement p {
+    padding: 8px;
+}
+
+.Accompagnement h3 {
+    color:purple;
+    font-size: 150%;
+    margin-left: 10%;
+}
+
+.SubDivAccompagnement {
+    margin: 0;
+    margin-left: 10%;
+}
+
+.Citation {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Citation h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+    margin:0;
+    color: rgb(72, 72, 236);
+}
+
+.Citation p {
+    text-align: center;
+    font-style: italic;
+}
+
+.ContentCitation {
+    margin-bottom: 8px;
+}
+
+.ContentCitation img {
+    width: 100%;
+}
+
+#Citation-Laurent-Gounelle {
+    background-color: pink;
+    width: 40%;
+    min-width: 350px;
+    height: fit-content;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+.Bottom {
+    color: white;
+    margin: 0;
+    background-color: black;
+}
+
+.Bottom h3 {
+    margin: 0;
+    padding: 8px 0px 8px 8px;
+}
+
+.Bottom p {
+    padding: auto;
+    margin: 0;
+    padding: 8px 0px 8px 8px;
+}
+
+.PhotoCabinet {
+    vertical-align: top;
+    width:20%;
+    margin: 8px;
+}
+
+.carteCabinet {
+    width: 40%;
+    margin: 8px;
+}
