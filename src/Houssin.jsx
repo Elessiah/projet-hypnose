@@ -33,7 +33,7 @@ function Houssin() {
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
-          <img src="headHoussin.jpg"/> 
+          <img src="headHoussin.jpg" alt="Photo de Gwladys ROBERT, Céline HOUSSIN (mise en avant), et Laurence DERIEUX"/> 
         </div>
         <h1>Cabinet d'hypnose thérapeutique créative et médicale</h1>
         </header>
@@ -65,7 +65,7 @@ function Houssin() {
               <p>J’ai découvert l’hypnose en 2015 lors d’un congrès, cette rencontre a changé ma vision du monde médicale et ma pratique au quotidien. En effet, on peut apporter tellement de <strong>réconfort et de sécurité</strong> aux patients juste avec la communication thérapeutique, pour donner une perception des choses <strong>plus positive et confortable</strong>.</p>
             </div>
             <div id='Perso-illu-parcours'>
-                <img src="BonhommeParcours.png" className='imgIllu' />
+                <img src="BonhommeParcours.png" alt="Illustration d'un enfant accompagné durant une intervention médicale" className='imgIllu' />
             </div>
           </div>
           <div className='Perso-content'>
@@ -97,7 +97,7 @@ function Houssin() {
             <p>Cette intervention est une épreuve pour les femmes puisqu’on nous ôte une partie de notre féminité et le pouvoir de donner la vie. L’hypnose aide à faire ce deuil et à accepter ce passage de la vie.</p>
           </div>
           <div id='Perso-illu-le-chat'>
-            <img src='illuLeChat.png' className='imgIllu'/>
+            <img src='illuLeChat.png' alt="" className='imgIllu'/>
           </div>
         </div>
         <div className='ImportantContainer'>

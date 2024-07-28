@@ -7,7 +7,7 @@ function Robert() {
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
-          <img src="headRobert.jpg" alt="photo des trois thérapeutes"/>
+          <img src="headRobert.jpg" alt="Photo de Gwladys ROBERT (mise en avant), Céline HOUSSIN, et Laurence DERIEUX"/>
         </div>
         <h1>Cabinet d'hypnose thérapeutique créative et médicale</h1>
       </header>
@@ -40,12 +40,12 @@ function Robert() {
             <p>J'observe, j'ose plus, et je fais participer mes patients pour qu'ils soient en mouvement et qu'ils mobilisent leurs ressources intérieures et inconscientes.</p>
           </div>
           <div id='travailRobert2'>
-            <img src='PhotoRobertTravail2.jpg' className='imgIllu'/>
+            <img src='PhotoRobertTravail2.jpg' alt="Photo de Gwladys ROBERT qui porte un enfant, en lui montrant un écran" className='imgIllu'/>
           </div>
         </div>
         <div className='Perso-content'>
           <div id='travailRobert3'>
-            <img src='PhotoRobertTravail3.jpg' className='imgIllu'/>
+            <img src='PhotoRobertTravail3.jpg' alt="Photo de Gwladys ROBERT qui accompagne un enfant avant une opération" className='imgIllu'/>
           </div>
           <div className='Perso-text'>
             <p>L'hypnose est un <strong>puissant outil</strong> que j'utilise au quotidien pour la <strong>gestion du stress</strong>, <strong>les phobies</strong>, <strong>les douleurs aiguës</strong> ainsi que <strong>dans la préparation</strong> à une chirurgie et une anesthésie.</p>

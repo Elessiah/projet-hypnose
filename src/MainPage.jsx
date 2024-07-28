@@ -91,13 +91,13 @@ function MainPage() {
           </div>
           <div className='Accompagnement'>
             <div className='SubDivAccompagnement'>
-              <p>Moqueries ?</p>
+              <Paper elevation={5} className='PaperAccompagnement'><p>Moqueries ?</p></Paper>
               <div className='SubDivAccompagnement'>
-                <p>Renfermement ?</p>
+                <Paper elevation={5} className='PaperAccompagnement'><p>Renfermement ?</p></Paper>
                 <div className='SubDivAccompagnement'>
-                  <p>Perte de confiance en soi ?</p>
+                  <Paper elevation={5} className='PaperAccompagnement'><p>Perte de confiance en soi ?</p></Paper>
                   <div className='SubDivAccompagnement'>
-                    <p>Harcèlement Scolaire ou Professionnel</p>
+                    <Paper elevation={5} className='PaperAccompagnement'><p>Harcèlement Scolaire ou Professionnel</p></Paper>
                   </div>
                 </div>
               </div>

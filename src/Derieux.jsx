@@ -7,7 +7,7 @@ function Derieux() {
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
-          <img src="headDerieux.jpg" />
+          <img src="headDerieux.jpg" alt="Photo de Gwladys ROBERT, Céline HOUSSIN, et Laurence DERIEUX (mise en avant)"/>
         </div>
         <h1>Cabinet d'hypnose thérapeutique créative et médicale</h1>
       </header>
@@ -43,12 +43,12 @@ function Derieux() {
             <p>Je leur ai parlé, j'ai <b>appris à les comprendre</b> en fonction de leur vécu, de leur âge, de leurs antécédents, de leur milieu familial.</p>
           </div>
           <div id='travailDerieux1'>
-            <img src='photoTravailDerieux1.png' className='imgIllu'/>
+            <img src='photoTravailDerieux1.png' alt="Photo d'une enfant qui joue avec une tablette dans un lit d'hôpital" className='imgIllu'/>
           </div>
         </div>
         <div className='Perso-content'>
           <div id='logoKidOBlock'>
-            <img src='logoKidOBlock.png' className='imgIllu'/>
+            <img src='logoKidOBlock.png' alt="Logo de Kid'O Bloc" className='imgIllu'/>
           </div>
           <div className='Perso-text'>
             <h3>Mes travaux</h3>
@@ -68,9 +68,6 @@ function Derieux() {
             </Paper>
         </div>
         <div className='Perso-content'>
-          <div className='Perso-illu'>
-            <img src="ToBeDetermined" alt="ToBeDetermined" />
-          </div>
           <div className='Perso-text'>
             <h3>Mon objectif</h3>
             <p>Lors de mes rencontres, j'ai pu observer cette richesse que les enfants nous apportent avec un mot, un sourire un geste mais j'ai aussi pu lire dans leurs yeux la souffrance, la tristesse, la douleur, et cela est difficilement supportable.</p>
