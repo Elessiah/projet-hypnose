@@ -1,17 +1,28 @@
 import React from 'react';
 import './PagePerso.css';
-import { Paper, Avatar, Divider } from '@mui/material';
+import { Paper, Avatar, Divider, IconButton } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
+import { useNavigate } from 'react-router-dom';
 
 function Derieux() {
+  const navigate = useNavigate();
+
   return (
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
           <img src="headDerieux.jpg" alt="Photo de Gwladys ROBERT, Céline HOUSSIN, et Laurence DERIEUX (mise en avant)"/>
+          <IconButton onClick={(evt) => navigate('/')} id="HomeButton">
+            <HomeIcon id="HomeButtonIcon" />
+          </IconButton>
         </div>
-        <h1>Cabinet d'hypnose thérapeutique créative et médicale</h1>
       </header>
       <div className='Perso-bg-content'>
+        <div className='groupTitle'>
+            <img src='logo3PlumeMarron64.png' alt='Logo du site. 3 plumes volant au vent'/>            
+            <h1 className='Perso-title'>Cabinet d'hypnose thérapeutique créative et médicale</h1>
+            <img src='logo3PlumeMarron64.png' alt='Logo du site. 3 plumes volant au vent' className='reverseImg'/>
+        </div>
       <div className='ImportantContainer'>
         <p><strong className='Important'><i>« Je ne retomberai jamais en enfance, j'y suis toujours resté. » </i> Tristan Bernard</strong></p>
       </div>
@@ -21,7 +32,7 @@ function Derieux() {
               <div className='Presentation'>
                 <Avatar 
                 alt="Photo de Laurence DERIEUX"
-                src="AvatarLaurence.jpg"
+                src="AvatarLaurence256.jpg"
                 sx={{ width: 150, height: 150 }}
                 />
                 <div className='Info'>
@@ -68,6 +79,9 @@ function Derieux() {
             </Paper>
         </div>
         <div className='Perso-content'>
+          <div id='TravailDerieux2'>
+            <img src="photoTravailDerieux2.jpeg" alt="Enfant feuilletant un magazine Dysney avant une anésthésie" className='imgIllu'/>
+          </div>
           <div className='Perso-text'>
             <h3>Mon objectif</h3>
             <p>Lors de mes rencontres, j'ai pu observer cette richesse que les enfants nous apportent avec un mot, un sourire un geste mais j'ai aussi pu lire dans leurs yeux la souffrance, la tristesse, la douleur, et cela est difficilement supportable.</p>

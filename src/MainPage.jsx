@@ -17,21 +17,25 @@ function MainPage() {
   return (
     <div className="MainPage">
       <header className="MainPage-header">
-        <div className='Title'>
-          <h1>Intervention Chirurgicale - Harcèlement scolaire</h1>
-          <h2>3 Plumes pour plus d'apaisement, de sérénité, de confiance en soi...</h2>
-        </div>
         <div className='headerBG'>
           <img src="headMainPage.jpg"/>
         </div>
       </header>
       <div className='MainPage-content'>
+        <div className='groupTitle'>
+          <img src='logo3PlumeMarron128.png' alt='Logo du site. 3 plumes volant au vent' />
+          <div className='Title'>
+            <h1>Intervention Chirurgicale - Harcèlement scolaire</h1>
+            <h2>3 Plumes pour plus d'apaisement, de sérénité, de confiance en soi...</h2>
+          </div>
+          <img src='logo3PlumeMarron128.png' alt='Logo du site. 3 plumes volant au vent' className='reverseImg'/>
+        </div>
         <Box className='MainPage-BoxDisplay'>
           <Paper elevation={15} className='MainPage-display' id='Gladys' onClick={(evt) => navigate('/robert')} >
             <div className='MainPage-presentation'>
               <Avatar
                 alt="Photo de Gwladys Robert"
-                src="AvatarGladys.jpg"
+                src="AvatarGladys128.jpg"
                 sx={{ width: 100, height: 100 }}
                 className='Avatar'
               />
@@ -45,7 +49,7 @@ function MainPage() {
             <div className='MainPage-presentation'>
                 <Avatar
                   alt="Photo de Céline HOUSSIN"
-                  src="AvatarCeline.jpg"
+                  src="AvatarCeline128.jpg"
                   sx={{ width: 100, height: 100 }}
                   className='Avatar'
                 />
@@ -59,7 +63,7 @@ function MainPage() {
             <div className='MainPage-presentation'>
                 <Avatar
                   alt="Photo de Laurence DERIEUX"
-                  src="AvatarLaurence.jpg"
+                  src="AvatarLaurence128.jpg"
                   sx={{ width: 100, height: 100 }}
                   className='Avatar'
                 />
@@ -129,13 +133,11 @@ function MainPage() {
               <div className='contentInfoDialog'>
                 <h4>Pour avoir de nouveaux outils pour gérer la douleur ou des situations de stress : </h4>
                   <ul>
-                    <li>Harcèlement scolaire</li>
-                    <li>Intervention chirurgicale (prothèse, hystérectomie, amputation, ...)</li>
+                    <li>Intervention chirurgicale</li>
+                    <li>Douleurs post-opératoire</li>
                     <li>Préparation accouchement</li>
-                    <li>Douleurs aiguës suite à des interventions</li>
-                    <li>Douleurs chroniques (persistances de blocage lors du travail de rééducation articulaires...)</li>
+                    <li>Harcèlement</li>
                     <li>Anxiété lié à des épreuves scolaire ou médicale</li>
-                    <li>Phobie IRM = prise en charge directement à la clinique Saint Martin à Caen</li>
                   </ul>
               </div>
           </Dialog>
@@ -147,7 +149,7 @@ function MainPage() {
             <DialogTitle className='TitleDialog'><strong>L'hypnose pour qui ?</strong></DialogTitle>
             <Divider/>
             <div className='contentInfoDialog'>
-              <p><strong>Pour toute personne motivé</strong> (enfants, adolescents, adultes, ...) qui a la volonté de compléter sa boîte à outils pour aller au mieux.</p>
+              <p><strong>Pour toute personne motivée</strong> (enfants, adolescents, adultes, personnes agées) qui a la volonté de compléter sa boîte à outils pour être acteur de sa vie.</p>
             </div>
           </Dialog>
           <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen4(true)}>

@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import './PagePerso.css';
 import YouTubeEmbed from './YoutubeEmbed';
-import { Avatar, Button, Paper, Divider} from '@mui/material';
+import { Avatar, Button, Paper, Divider, IconButton} from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
+import { useNavigate } from 'react-router-dom';
 
 function Houssin() {
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
@@ -33,18 +36,25 @@ function Houssin() {
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
-          <img src="headHoussin.jpg" alt="Photo de Gwladys ROBERT, Céline HOUSSIN (mise en avant), et Laurence DERIEUX"/> 
+          <img src="headHoussin.jpg" alt="Photo de Gwladys ROBERT, Céline HOUSSIN (mise en avant), et Laurence DERIEUX"/>
+          <IconButton onClick={(evt) => navigate('/')} id='HomeButton'>
+            <HomeIcon id='HomeButtonIcon'/>
+          </IconButton>
         </div>
-        <h1>Cabinet d'hypnose thérapeutique créative et médicale</h1>
         </header>
         <div className='Perso-bg-content'>
+          <div className='groupTitle'>
+            <img src='logo3PlumeMarron64.png' alt='Logo du site. 3 plumes volant au vent'/>            
+            <h1 className='Perso-title'>Cabinet d'hypnose thérapeutique créative et médicale</h1>
+            <img src='logo3PlumeMarron64.png' alt='Logo du site. 3 plumes volant au vent' className='reverseImg'/>
+          </div>
           <div className='Perso-content'>
             <div className='Perso-illu'>
               <Paper elevation={5} className='Icon'>
                 <div className='Presentation'>
                     <Avatar
                       alt="Photo de Céline HOUSSIN"
-                      src="AvatarCeline.jpg"
+                      src="AvatarCeline256.jpg"
                       sx={{ width: 150, height: 150
                       }}
                     />
@@ -65,7 +75,7 @@ function Houssin() {
               <p>J’ai découvert l’hypnose en 2015 lors d’un congrès, cette rencontre a changé ma vision du monde médicale et ma pratique au quotidien. En effet, on peut apporter tellement de <strong>réconfort et de sécurité</strong> aux patients juste avec la communication thérapeutique, pour donner une perception des choses <strong>plus positive et confortable</strong>.</p>
             </div>
             <div id='Perso-illu-parcours'>
-                <img src="BonhommeParcours.png" alt="Illustration d'un enfant accompagné durant une intervention médicale" className='imgIllu' />
+                <img src="SchtroupmfIRM.jpg" alt="Dessin d'une salle d'IRM sous forme d'un village de Schtroumpf" className='imgIllu' />
             </div>
           </div>
           <div className='Perso-content'>
@@ -94,7 +104,7 @@ function Houssin() {
           <div className='Perso-text'>
             <p>Convaincue par la force de cet outil et des bienfaits de l’hypnose; j’ai moi même utilisé l’auto-hypnose pour me préparer et avoir une hystérectomie avec une péridurale.</p>
             <p>J’ai travaillé pour moi-même comme si j’étais mon propre patient, adapté tous les outils dont j’avais besoin personnellement pour cette épreuve. Résultats, je suis allée sereinement à mon intervention, j’ai réussi à <strong>gérer confortablement la douleur</strong>. J’ai cicatrisé et récupéré très vite.</p>
-            <p>Cette intervention est une épreuve pour les femmes puisqu’on nous ôte une partie de notre féminité et le pouvoir de donner la vie. L’hypnose aide à faire ce deuil et à accepter ce passage de la vie.</p>
+            <p>Cette intervention est une épreuve pour les femmes puisqu’on nous ôte une partie de notre féminité et le pouvoir de donner la vie. <strong>L’hypnose aide à faire ce deuil et à accepter ce passage de la vie</strong>.</p>
           </div>
           <div id='Perso-illu-le-chat'>
             <img src='illuLeChat.png' alt="" className='imgIllu'/>

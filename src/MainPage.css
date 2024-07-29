@@ -7,52 +7,59 @@ header.MainPage-header {
     vertical-align: bottom;
 }
 
+.reverseImg {
+    transform: rotateY(180deg);
+}
+
+.groupTitle {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .Title {
     position: relative;
     display: inline;
+    text-align: center;
 }
 
 .MainPage-header h1 {
-    background-color: rgba(224, 142, 210, 0.616);
+    background-color: rgb(255, 255, 255);
     font-size: 180%;
     width: fit-content;
     height: fit-content;
-    margin: 420px auto 0 auto;
+    margin: 460px auto 0 auto;
     border-radius: 30px;
     padding: 8px;
 }
 
 .MainPage-header h2 {
-    background-color: rgba(241, 140, 224, 0.582);
+    background-color: rgb(255, 255, 255);
     width: fit-content;
     height: fit-content;
     margin: 10 auto 0 auto;
     font-size: 170%;
+    border-radius: 30px;
     padding: 8px;
 }
 
 div.headerBG {
-    position:absolute;
-    top:0;
-    left: 0;
     width: 100%;
-    height: 800px;
-    z-index: -1;
-    overflow: hidden;
+    height: 600px;
 }
 
 div.headerBG img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     display: block;
 }
 
 div.MainPage-content {
     background-color: lavender;
     width: 100%;
-    min-height: fit-content;
     height: fit-content;
 }
 
@@ -184,7 +191,7 @@ div.MainPage-content {
 .Accompagnement h3 {
     color:purple;
     font-size: 150%;
-    margin-left: 10%;
+    width: fit-content;
 }
 
 .SubDivAccompagnement {
