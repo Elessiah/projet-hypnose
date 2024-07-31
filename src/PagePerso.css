@@ -93,6 +93,10 @@ div.Presentation {
     height: 400px;
 }
 
+#photoSouriante {
+    height: 200px;
+}
+
 .imgIllu {
     width: 100%;
     height: 100%;
@@ -189,4 +193,8 @@ div.Presentation {
 
 #citationPauwels p {
     margin: 10px;
+}
+
+#ConclusionCeline {
+    font-size: 150%;
 }

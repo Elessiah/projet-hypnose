@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PagePerso.css';
 import YouTubeEmbed from './YoutubeEmbed';
 import { Avatar, Button, Paper, Divider, IconButton} from '@mui/material';
@@ -132,6 +132,18 @@ function Houssin() {
                 </div>
               </div>
           </div>
+        </div>
+        <div className='Perso-content'>
+          <div id='photoSouriante'>
+            <img src='photoSouriante600.jpg' alt="Céline HOUSSIN souriante" className='imgIllu' />
+          </div>
+          <div className='Perso-text'>
+            <p>Mon expérience, enrichie depuis 10 ans, avec l'hypnose me pousse à sortir de mon cadre de manipulatrice au scanner et à l'IRM pour pouvoir apporter une aide à toute personne devant une intervention.</p>
+            <p><strong>L'hypnose ne remplace pas les médicaments</strong> mais elle aide à mieux tolérer les évènements et rester maître de son soin.</p>
+          </div>
+        </div>
+        <div className='Perso-content'>
+            <p id="ConclusionCeline"><b>Douce et à l'écoute, je me ferais un plaisir de vous accompagner dans vos épreuves en trouvant les outils et l'approche adaptés personnellement à vos besoins, pour vivre en toute sécurité ce moment délicat.</b></p>
         </div>
       </div>
       <div className='Bottom'>

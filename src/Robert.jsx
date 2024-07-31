@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect } from 'react';
 import './PagePerso.css';
 import { Avatar, Paper, IconButton} from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
@@ -7,12 +7,29 @@ import { useNavigate } from 'react-router-dom';
 
 function Robert() {
   const navigate = useNavigate();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  let imageHead;
+  
+  if (windowWidth > 600)
+    imageHead = "headRobert.jpg";
+  else 
+    imageHead =  "headRobert600.jpg";
 
   return (
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
-          <img src="headRobert.jpg" alt="Photo de Gwladys ROBERT (mise en avant), Céline HOUSSIN, et Laurence DERIEUX"/>
+          <img src={imageHead} alt="Photo de Gwladys ROBERT (mise en avant), Céline HOUSSIN, et Laurence DERIEUX"/>
           <IconButton onClick={(evt) => navigate('/')} id="HomeButton" >
             <HomeIcon id="HomeButtonIcon" />
           </IconButton>
@@ -35,7 +52,7 @@ function Robert() {
                 />
                 <div className='Info'>
                   <h2>Gwladys ROBERT</h2>
-                  <h3>Tel : <a href='tel:+33699269703'>06.99.26.97.03</a></h3>
+                  <h3>Tel : <a href='tel:+33699269703'>07.61.74.42.94</a></h3>
                 </div>
               </div>
             </Paper>

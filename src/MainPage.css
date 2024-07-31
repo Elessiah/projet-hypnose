@@ -130,8 +130,8 @@ div.MainPage-content {
 }
 
 .InfoElem {
-    width: 20%;
-    min-width: 350px;
+    width: 400px;
+    height: 500px;
     height: fit-content;
     justify-content: center;
     margin: 20px;
@@ -155,8 +155,11 @@ div.MainPage-content {
 }
 
 .InfoIllu {
-    width: 100%;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
 }
 
 .TherapieInfo strong {
@@ -228,7 +231,7 @@ div.MainPage-content {
 }
 
 #Citation-Laurent-Gounelle {
-    background-color: pink;
+    background-color: rgb(255, 255, 255);
     width: 40%;
     min-width: 350px;
     height: fit-content;
@@ -252,6 +255,10 @@ div.MainPage-content {
     padding: auto;
     margin: 0;
     padding: 8px 0px 8px 8px;
+}
+
+.Bottom img {
+    min-width: 350px;
 }
 
 .PhotoCabinet {

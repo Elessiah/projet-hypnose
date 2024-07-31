@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './MainPage.css';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -9,16 +9,37 @@ import { Dialog, DialogTitle, Divider } from '@mui/material';
 
 function MainPage() {
   const navigate = useNavigate();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
   const [open4, setOpen4] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    }
+
+  window.addEventListener('resize', handleResize);
+  return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  function navigateToTop(destination) {
+    window.scrollTo({top: 0, behavior:'instant'});
+    navigate(destination);
+  }
+
+  let imageHead;
+  if (windowWidth > 600)
+    imageHead = "headMainPage.jpg";
+  else
+    imageHead = "headPortrait600.jpg";
+
   return (
     <div className="MainPage">
       <header className="MainPage-header">
         <div className='headerBG'>
-          <img src="headMainPage.jpg"/>
+          <img src={imageHead} alt='Photo des trois thérapeutes' className='imgHeaderBG'/>
         </div>
       </header>
       <div className='MainPage-content'>
@@ -31,7 +52,7 @@ function MainPage() {
           <img src='logo3PlumeMarron128.png' alt='Logo du site. 3 plumes volant au vent' className='reverseImg'/>
         </div>
         <Box className='MainPage-BoxDisplay'>
-          <Paper elevation={15} className='MainPage-display' id='Gladys' onClick={(evt) => navigate('/robert')} >
+          <Paper elevation={15} className='MainPage-display' id='Gladys' onClick={(evt) => navigateToTop('/robert')} >
             <div className='MainPage-presentation'>
               <Avatar
                 alt="Photo de Gwladys Robert"
@@ -41,11 +62,11 @@ function MainPage() {
               />
               <div className='Info'>
                 <h2>Gwladys ROBERT</h2>
-                <h3>Tel : 06.99.26.97.03</h3>
+                <h3>Tel : 07.61.74.42.94</h3>
               </div> 
             </div>
           </Paper>
-          <Paper elevation={15} className='MainPage-display' id='Celine' onClick={(evt) => navigate('/houssin')}>
+          <Paper elevation={15} className='MainPage-display' id='Celine' onClick={(evt) => navigateToTop('/houssin')}>
             <div className='MainPage-presentation'>
                 <Avatar
                   alt="Photo de Céline HOUSSIN"
@@ -59,7 +80,7 @@ function MainPage() {
                 </div>
             </div>
           </Paper>
-          <Paper elevation={15} className='MainPage-display' id='Laurence' onClick={(evt) => navigate('./derieux')}>
+          <Paper elevation={15} className='MainPage-display' id='Laurence' onClick={(evt) => navigateToTop('./derieux')}>
             <div className='MainPage-presentation'>
                 <Avatar
                   alt="Photo de Laurence DERIEUX"
@@ -79,13 +100,13 @@ function MainPage() {
             <div className='SubDivAccompagnement'>
               <Paper elevation={5} className='PaperAccompagnement'><p>Une Anxiété ?</p></Paper>
               <div className='SubDivAccompagnement'>
-                <Paper elevation={5} className='PaperAccompagnement'><p>Un stress ?</p></Paper>
+                <Paper elevation={4} className='PaperAccompagnement'><p>Un stress ?</p></Paper>
                 <div className='SubDivAccompagnement'>
-                  <Paper elevation={5} className='PaperAccompagnement'><p>Appréhension pour un soin ?</p></Paper>
+                  <Paper elevation={3} className='PaperAccompagnement'><p>Appréhension pour un soin ?</p></Paper>
                   <div className='SubDivAccompagnement'>
-                    <Paper elevation={5} className='PaperAccompagnement'><p>Appréhension pour un examen ?</p></Paper>
+                    <Paper elevation={2} className='PaperAccompagnement'><p>Appréhension pour un examen ?</p></Paper>
                     <div className='SubDivAccompagnement'>
-                      <Paper elevation={5} className='PaperAccompagnement'><p>Appréhension pour une intervention ?</p></Paper>
+                      <Paper elevation={1} className='PaperAccompagnement'><p>Appréhension pour une intervention ?</p></Paper>
                     </div>
                   </div>
                 </div>
@@ -97,11 +118,11 @@ function MainPage() {
             <div className='SubDivAccompagnement'>
               <Paper elevation={5} className='PaperAccompagnement'><p>Moqueries ?</p></Paper>
               <div className='SubDivAccompagnement'>
-                <Paper elevation={5} className='PaperAccompagnement'><p>Renfermement ?</p></Paper>
+                <Paper elevation={4} className='PaperAccompagnement'><p>Renfermement ?</p></Paper>
                 <div className='SubDivAccompagnement'>
-                  <Paper elevation={5} className='PaperAccompagnement'><p>Perte de confiance en soi ?</p></Paper>
+                  <Paper elevation={3} className='PaperAccompagnement'><p>Perte de confiance en soi ?</p></Paper>
                   <div className='SubDivAccompagnement'>
-                    <Paper elevation={5} className='PaperAccompagnement'><p>Harcèlement Scolaire ou Professionnel</p></Paper>
+                    <Paper elevation={2} className='PaperAccompagnement'><p>Harcèlement Scolaire ou Professionnel</p></Paper>
                   </div>
                 </div>
               </div>
@@ -111,7 +132,7 @@ function MainPage() {
         </div>
         <Box className='TherapieInfo'>
           <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen1(true)}>
-            <img src="/hypnosePourquoi.jpeg" alt="Illustration de Qu'est-ce que l'Hypnose" className='InfoIllu'/>
+            <img src="/garcondanslalune600.jpg" alt="Illustration de Qu'est-ce que l'Hypnose" className='InfoIllu'/>
             <h3>Qu'est-ce que l'hypnose ?</h3>
           </Paper>
           <Dialog onClose={(evt) => setOpen1(false)} open={open1}>
@@ -124,7 +145,7 @@ function MainPage() {
             </div>
           </Dialog>
           <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen2(true)}>
-            <img src="/peakpx.jpg" alt="Illustration de l'hypnose pour quoi" className='InfoIllu'/>
+            <img src="/Hypnose_0008.jpg" alt="Illustration de l'hypnose pour quoi" className='InfoIllu' />
             <h3>L'hypnose pour quoi ?</h3>
           </Paper>
           <Dialog onClose={(evt) => setOpen2(false)} open={open2}>
@@ -142,7 +163,7 @@ function MainPage() {
               </div>
           </Dialog>
           <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen3(true)}>
-            <img src="/peakpx.jpg" alt="Illustration de l'hypnose pour qui" className='InfoIllu'/>
+            <img src="/Familie.jpg" alt="Illustration de l'hypnose pour qui" className='InfoIllu' id='FautQueCaRentre'/>
             <h3>L'hypnose pour qui ?</h3>
           </Paper>
           <Dialog onClose={(evt) => setOpen3(false)} open={open3}>
@@ -153,7 +174,7 @@ function MainPage() {
             </div>
           </Dialog>
           <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen4(true)}>
-            <img src="/peakpx.jpg" alt="Illustration de l'hypnose pour qui" className='InfoIllu'/>
+            <img src="/hypnosePourquoi.jpeg" alt="Illustration de l'hypnose pour qui" className='InfoIllu'/>
             <h3>L'hypnose comment ça marche ?</h3>
           </Paper>
           <Dialog onClose={(evt) => setOpen4(false)} open={open4}>
@@ -171,7 +192,7 @@ function MainPage() {
             <p>« Une vie réussie est une vie que l'on a menée conformément à ses souhaits, en agissant toujours en accord avec ses valeurs, en donnant le meilleur de soi-même dans ce que l'on fait, en restant en harmonie avec qui l'on est, et, si possible, une qui nous a donné l'occasion de nous dépasser, de nous consacrer à l'humanité, même très humblement, même si c'est infime.</p>
             <p>Une petite plume d'oiseau confiée au vent.</p>
             <p>Un sourire pour les autres. »</p>
-            <img src='IlluCitation.png' alt='Illustration de la citation'/>
+            <img src='MauvaiseInfluence.jpg' alt='Illustration de la citation'/>
           </Paper>
         </div>
       </div>

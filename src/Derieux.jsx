@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './PagePerso.css';
 import { Paper, Avatar, Divider, IconButton } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
@@ -6,12 +6,29 @@ import { useNavigate } from 'react-router-dom';
 
 function Derieux() {
   const navigate = useNavigate();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  let imageHead;
+  
+  if (windowWidth > 600)
+    imageHead = "headDerieux.jpg";
+  else 
+    imageHead =  "headDerieux600.jpg";
 
   return (
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
-          <img src="headDerieux.jpg" alt="Photo de Gwladys ROBERT, Céline HOUSSIN, et Laurence DERIEUX (mise en avant)"/>
+          <img src={imageHead} alt="Photo de Gwladys ROBERT, Céline HOUSSIN, et Laurence DERIEUX (mise en avant)"/>
           <IconButton onClick={(evt) => navigate('/')} id="HomeButton">
             <HomeIcon id="HomeButtonIcon" />
           </IconButton>
