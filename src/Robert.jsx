@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PagePerso.css';
 import { Avatar, Paper, IconButton} from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Robert() {
-  const navigate = useNavigate();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const navigate = useNavigate();
+      const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,7 +29,7 @@ function Robert() {
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
-          <img src={imageHead} alt="Photo de Gwladys ROBERT (mise en avant), Céline HOUSSIN, et Laurence DERIEUX"/>
+          <img src={imageHead} alt="Photo de Gwladys MUELLE (mise en avant), Céline HOUSSIN, et Laurence DERIEUX"/>
           <IconButton onClick={(evt) => navigate('/')} id="HomeButton" >
             <HomeIcon id="HomeButtonIcon" />
           </IconButton>
@@ -46,7 +46,7 @@ function Robert() {
             <Paper elevation={5} className='Icon'>
               <div className='Presentation'>
                 <Avatar
-                alt="Photo de Gwladys ROBERT"
+                alt="Photo de Gwladys MUELLE"
                 src="AvatarGladys256.jpg"
                 sx={{ width: 150, height: 150}}
                 />
@@ -58,7 +58,7 @@ function Robert() {
             </Paper>
           </div>
           <div className='Perso-text'>
-            <h3>Gwladys ROBERT</h3>
+            <h3>Gwladys MUELLE</h3>
             <p>Infirmière anesthésiste et practicienne en hypnose, j'ai toujours été sensible à la technicité de ma profession tout en étant consciente que prendre soin c'est aussi <strong>accompagner, rassurer, et sécuriser </strong>la personne que l'on soigne.</p>
           </div>
         </div>
@@ -70,21 +70,21 @@ function Robert() {
             <p>L’esprit inconscient est notre partie savante!.</p>
           </div>
           <div id='travailRobert2'>
-            <img src='PhotoRobertTravail2.jpg' alt="Photo de Gwladys ROBERT qui porte un enfant, en lui montrant un écran" className='imgIllu'/>
+            <img src='PhotoRobertTravail2.jpg' alt="Photo de Gwladys MUELLE qui porte un enfant, en lui montrant un écran" className='imgIllu'/>
           </div>
         </div>
         <div className='Perso-content'>
           <div id='travailRobert3'>
-            <img src='PhotoRobertTravail3.jpg' alt="Photo de Gwladys ROBERT qui accompagne un enfant avant une opération" className='imgIllu'/>
+            <img src='PhotoRobertTravail3.jpg' alt="Photo de Gwladys MUELLE qui accompagne un enfant avant une opération" className='imgIllu'/>
           </div>
           <div className='Perso-text'>
             <p>L'hypnose est un <strong>puissant outil</strong> que j'utilise au quotidien pour la <strong>gestion du stress</strong>, <strong>les phobies</strong>, <strong>les douleurs aiguës</strong> ainsi que <strong>dans la préparation</strong> à une chirurgie et une anesthésie.</p>
-            <p>Pour chaque problématique, nous <strong>avons tous les réponses en nous</strong>, mais parfois nous avons besoin d'une tierce personne pour <strong>nous guider</strong>.</p>
+            <p>Pour chaque problématique nous <strong>avons tous les réponses en nous</strong>, mais parfois nous avons besoin d'une tierce personne pour <strong>nous guider</strong>.</p>
             <p>Je peux être celle-ci, celle qui vous aidera avec bienveillance à trouver les solutions pour un mieux être, pour appréhender certaines difficultés de la vie plus serainement.</p>
           </div>
         </div>
         <div className='ImportantContainer'>
-          <p><strong>Vous êtes le principal acteur ! Je serais votre guide !</strong></p>
+          <p><strong>Vous êtes le principal acteur ! Je serai votre guide !</strong></p>
         </div>
       </div>
       <div className='Bottom'>

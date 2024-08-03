@@ -73,7 +73,7 @@ div.MainPage-content {
 
 .MainPage-display {
     margin: 8px;
-    padding: '20px';
+    padding: 20px;
     width: 380px;
     height: fit-content;
     transition: 'transform 2.0s ease';
@@ -130,7 +130,7 @@ div.MainPage-content {
 }
 
 .InfoElem {
-    width: 400px;
+    width: 380px;
     height: 500px;
     height: fit-content;
     justify-content: center;
@@ -141,6 +141,7 @@ div.MainPage-content {
 .TitleDialog {
     text-align: center;
     color: purple;
+    font-size: 150%;
 }
 
 .TherapieInfo h3{
@@ -152,11 +153,13 @@ div.MainPage-content {
     width: fit-content;
     height: fit-content;
     margin: 15px;
+    font-size: 150%;
 }
 
 .InfoIllu {
-    width: 400px;
-    height: 400px;
+    margin: 0 auto 0 auto;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     object-position: top;
     display: block;

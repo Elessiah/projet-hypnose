@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './PagePerso.css';
 import YouTubeEmbed from './YoutubeEmbed';
 import { Avatar, Button, Paper, Divider, IconButton} from '@mui/material';
@@ -72,7 +72,7 @@ function Houssin() {
           </div>
           <div className='Perso-content'>
             <div className='Perso-text'>
-              <p>J’ai découvert l’hypnose en 2015 lors d’un congrès, cette rencontre a changé ma vision du monde médicale et ma pratique au quotidien. En effet, on peut apporter tellement de <strong>réconfort et de sécurité</strong> aux patients juste avec la communication thérapeutique, pour donner une perception des choses <strong>plus positive et confortable</strong>.</p>
+              <p>J’ai découvert l’hypnose en 2015 lors d’un congrès, cette rencontre a changé ma vision du monde médical et ma pratique au quotidien. En effet, on peut apporter tellement de <strong>réconfort et de sécurité</strong> aux patients juste avec la communication thérapeutique, pour donner une perception des choses <strong>plus positive et confortable</strong>.</p>
             </div>
             <div id='Perso-illu-parcours'>
                 <img src="SchtroupmfIRM.jpg" alt="Dessin d'une salle d'IRM sous forme d'un village de Schtroumpf" className='imgIllu' />
@@ -93,7 +93,7 @@ function Houssin() {
               <YouTubeEmbed videoId="odg17odd1Kk?si=_9crCwTFgKierY2n"/>
             </div>
             <div className='Perso-text'>
-              <p>Ayant la volonté d’offrir une continuité dans les soins pour les patients avec cet outil, j’ai réalisé <a href="https://www.hypnose-ericksonienne.org/Inversion-Radicale-d-un-Moment-IRM_a976.html">une conférence</a> et des formations en interne dans mon établissement sur la communication à une grande partie des soignants.</p>
+		<p>Ayant la volonté d’offrir une continuité dans les soins pour les patients avec cet outil, j’ai réalisé plusieurs conférences (<a href="https://www.hypnose-ericksonienne.org/Inversion-Radicale-d-un-Moment-IRM_a976.html">Inversion Radicale d'un Moment IRM</a> et <a href="https://www.hypnose-ericksonienne.org/Et-pourquoi-pas-une-hysterectomie-avec-hypnose_a1007.html">Et pourquoi pas une hysterectomie avec hypnose ?</a>) et des formations en interne dans mon établissement sur la communication à une grande partie des soignants.</p>
               <p>L’hypnose est devenue un <strong>outil indispensable</strong> dans mon travail et dans ma vie. De nombreux patients ont pu ainsi <strong>dépasser leurs peurs et leurs douleurs</strong> pour réaliser leurs examens d’IRM ou de scanner.</p>
             </div>            
           </div>
@@ -116,7 +116,7 @@ function Houssin() {
         </div>
         <div className='Perso-content'>
           <div className='carousel'>
-            <Paper elevation={15} id='ContentCarousel'>
+            <Paper elevation={5} id='ContentCarousel'>
               <div className='contentTestimonial'>
                 <p className='testimonialCitation'>"{testimonials[currentIndex].quote}"</p>
                   <Divider/>
@@ -139,11 +139,11 @@ function Houssin() {
           </div>
           <div className='Perso-text'>
             <p>Mon expérience, enrichie depuis 10 ans, avec l'hypnose me pousse à sortir de mon cadre de manipulatrice au scanner et à l'IRM pour pouvoir apporter une aide à toute personne devant une intervention.</p>
-            <p><strong>L'hypnose ne remplace pas les médicaments</strong> mais elle aide à mieux tolérer les évènements et rester maître de son soin.</p>
+            <p>L'hypnose ne remplace pas les médicaments mais elle aide à <strong>mieux tolérer les évènements et rester maître de son soin</strong>.</p>
           </div>
         </div>
         <div className='Perso-content'>
-            <p id="ConclusionCeline"><b>Douce et à l'écoute, je me ferais un plaisir de vous accompagner dans vos épreuves en trouvant les outils et l'approche adaptés personnellement à vos besoins, pour vivre en toute sécurité ce moment délicat.</b></p>
+            <p id="ConclusionCeline"><b>Douce et à l'écoute, je me ferai un plaisir de vous accompagner dans vos épreuves en trouvant les outils et l'approche adaptés personnellement à vos besoins, pour vivre en toute sécurité ce moment délicat.</b></p>
         </div>
       </div>
       <div className='Bottom'>

@@ -13,7 +13,8 @@ function MainPage() {
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
-  const [open4, setOpen4] = useState(false);
+    const [open4, setOpen4] = useState(false);
+    const [open5, setOpen5] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -61,7 +62,7 @@ function MainPage() {
                 className='Avatar'
               />
               <div className='Info'>
-                <h2>Gwladys ROBERT</h2>
+                <h2>Gwladys MUELLE</h2>
                 <h3>Tel : 07.61.74.42.94</h3>
               </div> 
             </div>
@@ -184,10 +185,23 @@ function MainPage() {
               <p><strong>La douleur = 80% ressentie émotionnelle</strong></p>
               <p>L'hypnose aide à modifier la perception des choses et transformer les émotions désagréables en quelque chose de plus confortable.</p>
             </div>
+	  </Dialog>
+          <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen5(true)}>
+            <img src="/money.jpg" alt="Illustration Séances et Tarifs" className='InfoIllu'/>
+            <h3>Séances et Tarifs</h3>
+          </Paper>
+          <Dialog onClose={(evt) => setOpen5(false)} open={open5}>
+            <DialogTitle className='TitleDialog'><strong>Séances et Tarifs</strong></DialogTitle>
+            <Divider/>
+              <div className='contentInfoDialog'>
+		  <p>Il faut en général <b>2 à 3 séances</b> pour acquérir les outils nécessaires pour être acteur de sa vie.</p>
+		  <p>Tarif: 60€/séance</p>
+            </div>
           </Dialog>
+
         </Box>
         <div className='Citation'>
-          <Paper elevation={15} className='ContentCitation' id='Citation-Laurent-Gounelle'>
+          <Paper elevation={5} className='ContentCitation' id='Citation-Laurent-Gounelle'>
             <h3>L'homme qui voulait être heureux de Laurent Gounelle</h3>
             <p>« Une vie réussie est une vie que l'on a menée conformément à ses souhaits, en agissant toujours en accord avec ses valeurs, en donnant le meilleur de soi-même dans ce que l'on fait, en restant en harmonie avec qui l'on est, et, si possible, une qui nous a donné l'occasion de nous dépasser, de nous consacrer à l'humanité, même très humblement, même si c'est infime.</p>
             <p>Une petite plume d'oiseau confiée au vent.</p>

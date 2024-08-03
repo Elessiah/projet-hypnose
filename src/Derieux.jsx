@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PagePerso.css';
 import { Paper, Avatar, Divider, IconButton } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import { useNavigate } from 'react-router-dom';
 
 function Derieux() {
-  const navigate = useNavigate();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const navigate = useNavigate();
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    
+    useEffect(() => {
+	const handleResize = () => {
+	    setWindowWidth(window.innerWidth);
+	}
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+	window.addEventListener('resize', handleResize);
+	return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
   let imageHead;
   
@@ -110,10 +110,10 @@ function Derieux() {
         </div>
       </div>
       <div className='Bottom'>
-        <h3>Où nous trouver ?</h3>
-        <p>Le cabinet est situé au <b>2ème étage, 10 rue Jane Addams - 14280 ST CONTEST</b></p>
-        <img src='ApercuCabinet.jpeg' alt='Photo du cabinet' className='PhotoCabinet'/>
-        <img src='carte.png' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
+          <h3>Où nous trouver ?</h3>
+          <p>Le cabinet est situé au <b>2ème étage, 10 rue Jane Addams - 14280 ST CONTEST</b></p>
+          <img src='ApercuCabinet.jpeg' alt='Photo du cabinet' className='PhotoCabinet'/>
+          <img src='carte.png' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
       </div>
     </div>
   );

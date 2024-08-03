@@ -23,6 +23,10 @@ header.Perso-header {
     text-align: center;
 }
 
+.Perso-illu {
+    max-width: 80%;
+}
+
 div.Perso-bg-content {
     background-color: lavender;
     width: 100%;
@@ -89,7 +93,7 @@ div.Presentation {
 }
 
 #Perso-illu-le-chat {
-    width: auto;
+    max-width: 350px;
     height: 400px;
 }
 
@@ -107,12 +111,13 @@ div.Presentation {
 
 .Perso-text {
     margin: 0 10px 0 10px;
-    min-width: 400px;
+    min-width: 350px;
     width: 50%;
 }
 
 .Icon {
     width: 400px;
+    max-width: 80%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +126,7 @@ div.Presentation {
 
 #ContentCarousel {
     font-style: italic;
-    width: 400px;
+    width: 350px;
     height: fit-content;
     margin: 20px auto 0 auto;
     padding: 10px;
@@ -147,7 +152,7 @@ div.Presentation {
 }
 
 .contentTestimonial {
-    width: 380px;
+    width: 350px;
     height: 360px;
     margin: auto;
 }
@@ -167,21 +172,25 @@ div.Presentation {
 
 #travailRobert2 {
     width: auto;
+    max-width: 90%;
     height: 250px;
 }
 
 #travailRobert3 {
     width: auto;
+    max-width: 90%;
     height: 250px;
 }
 
 #travailDerieux1 {
     width: auto;
+    max-width: 90%;
     height: 200px;
 }
 
 #TravailDerieux2 {
     width: auto;
+    max-width: 90%;
     height: 250px;
 }
 
