@@ -51,7 +51,7 @@ function Robert() {
                 sx={{ width: 150, height: 150}}
                 />
                 <div className='Info'>
-                  <h2>Gwladys ROBERT</h2>
+                  <h2>Gwladys MUELLE</h2>
                   <h3>Tel : <a href='tel:+33699269703'>07.61.74.42.94</a></h3>
                 </div>
               </div>

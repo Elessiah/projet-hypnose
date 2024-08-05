@@ -274,3 +274,7 @@ div.MainPage-content {
     width: 40%;
     margin: 8px;
 }
+
+#PrixInfoSeance {
+    text-align: center;
+}

@@ -194,10 +194,11 @@ function MainPage() {
             <DialogTitle className='TitleDialog'><strong>Séances et Tarifs</strong></DialogTitle>
             <Divider/>
               <div className='contentInfoDialog'>
-		  <p>Il faut en général <b>2 à 3 séances</b> pour acquérir les outils nécessaires pour être acteur de sa vie.</p>
-		  <p>Tarif: 60€/séance</p>
-            </div>
-          </Dialog>
+		  <p id="PrixInfoSeance"><b>60€/séance</b></p>
+  		  <p>Certaines mutuelles remboursent une partie de la consultation, renseignez-vous.</p>
+		  <p>Les séances ne sont pas prise en charge par l'Assurance Maladie, vous devez vous acquitter du montant de la consultation à chaque séance.</p>
+		      </div>
+         </Dialog>
 
         </Box>
         <div className='Citation'>
