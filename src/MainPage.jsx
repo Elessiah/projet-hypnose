@@ -53,7 +53,7 @@ function MainPage() {
           <img src='logo3PlumeMarron128.png' alt='Logo du site. 3 plumes volant au vent' className='reverseImg'/>
         </div>
         <Box className='MainPage-BoxDisplay'>
-          <Paper elevation={15} className='MainPage-display' id='Gladys' onClick={(evt) => navigateToTop('/robert')} >
+          <Paper elevation={15} className='MainPage-display' id='Gladys' onClick={(evt) => navigateToTop('/muelle')} >
             <div className='MainPage-presentation'>
               <Avatar
                 alt="Photo de Gwladys Robert"
@@ -91,7 +91,7 @@ function MainPage() {
                 />
                 <div className='Info'>
                   <h2>Laurence DERIEUX</h2>
-                  <h3>Tel : 06.00.00.00.00</h3>
+                  <h3>Tel : 07.44.84.22.49</h3>
                 </div>
             </div>
           </Paper>

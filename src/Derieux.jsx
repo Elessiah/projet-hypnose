@@ -54,7 +54,7 @@ function Derieux() {
                 />
                 <div className='Info'>
                   <h2>Laurence DERIEUX</h2>
-                  <h3>Tel : <a href='tel:+33600000000'>06.00.00.00.00</a></h3>
+                  <h3>Tel : <a href='tel:+3344842249'>07.44.84.22.49</a></h3>
                 </div>
               </div>
             </Paper>
