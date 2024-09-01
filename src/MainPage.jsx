@@ -141,7 +141,7 @@ function MainPage() {
             <Divider/>
             <div className='contentInfoDialog'>
             <p>C'est un état de conscience particulier et naturel que tout le monde a déjà vécu sans savoir qu'il s'agissait d'hypnose.</p>
-            <p>C'est comme être dans la lune, le corps est a un endroit et l'esprit à un autre.</p>
+            <p>C'est comme être dans la lune, le corps est à un endroit et l'esprit à un autre.</p>
             <p>Cette capacité du cerveau nous permet de vivre des moments ennuyeux ou inconfortables de façon très agréable tout en ayant perdu la notion du temps.</p>
             </div>
           </Dialog>
@@ -156,10 +156,10 @@ function MainPage() {
                 <h4>Pour avoir de nouveaux outils pour gérer la douleur ou des situations de stress : </h4>
                   <ul>
                     <li>Intervention chirurgicale</li>
-                    <li>Douleurs post-opératoire</li>
+                    <li>Douleurs post-opératoires</li>
                     <li>Préparation accouchement</li>
                     <li>Harcèlement</li>
-                    <li>Anxiété lié à des épreuves scolaire ou médicale</li>
+                    <li>Anxiété liée à des épreuves scolaires ou médicales</li>
                   </ul>
               </div>
           </Dialog>
@@ -182,7 +182,7 @@ function MainPage() {
             <DialogTitle className='TitleDialog'><strong>L'hypnose comment ça marche ?</strong></DialogTitle>
             <Divider/>
             <div className='contentInfoDialog'>
-              <p><strong>La douleur = 80% ressentie émotionnelle</strong></p>
+              <p><strong>La douleur = 80% ressentie émotionnel</strong></p>
               <p>L'hypnose aide à modifier la perception des choses et transformer les émotions désagréables en quelque chose de plus confortable.</p>
             </div>
 	  </Dialog>

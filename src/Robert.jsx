@@ -65,7 +65,7 @@ function Robert() {
         <div className='Perso-content'>
           <div className='Perso-text'>
             <p>Dans un premier temps la communication positive et thérapeutique m'a permis <b>d'améliorer la qualité</b> de mes prises en charge en constatant ses bienfaits.</p>
-            <p>J'ai ensuite reçu une solide formation certifiante en hypnose. Et cette discipline a totalement modifié ma pratique professionelle.</p>
+            <p>J'ai ensuite reçu une solide formation certifiante en hypnose. Cette discipline a totalement modifié ma pratique professionelle.</p>
             <p>J'observe, j'ose plus, et je fais participer mes patients pour qu'ils soient en mouvement et qu'ils mobilisent leurs ressources dont ils ne sont pas forcément conscients.</p>
             <p>L’esprit inconscient est notre partie savante!.</p>
           </div>
@@ -80,7 +80,7 @@ function Robert() {
           <div className='Perso-text'>
             <p>L'hypnose est un <strong>puissant outil</strong> que j'utilise au quotidien pour la <strong>gestion du stress</strong>, <strong>les phobies</strong>, <strong>les douleurs aiguës</strong> ainsi que <strong>dans la préparation</strong> à une chirurgie et une anesthésie.</p>
             <p>Pour chaque problématique nous <strong>avons tous les réponses en nous</strong>, mais parfois nous avons besoin d'une tierce personne pour <strong>nous guider</strong>.</p>
-            <p>Je peux être celle-ci, celle qui vous aidera avec bienveillance à trouver les solutions pour un mieux être, pour appréhender certaines difficultés de la vie plus serainement.</p>
+            <p>Je peux être celle-ci, celle qui vous aidera avec bienveillance à trouver les solutions pour un mieux être, pour appréhender certaines difficultés de la vie plus sereinement.</p>
           </div>
         </div>
         <div className='ImportantContainer'>
