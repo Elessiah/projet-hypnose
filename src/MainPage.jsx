@@ -32,7 +32,7 @@ function MainPage() {
 
   let imageHead;
   if (windowWidth > 600)
-    imageHead = "headMainPage.jpg";
+    imageHead = "headMainPage.webp";
   else
     imageHead = "headPortrait600.jpg";
 
@@ -132,10 +132,12 @@ function MainPage() {
           </div>
         </div>
         <Box className='TherapieInfo'>
-          <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen1(true)}>
-            <img src="/garcondanslalune600.jpg" alt="Illustration de Qu'est-ce que l'Hypnose" className='InfoIllu'/>
-            <h3>Qu'est-ce que l'hypnose ?</h3>
-          </Paper>
+          <div className='infoButtonDialog'>  
+            <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen1(true)}>
+              <img src="/garcondanslalune600.jpg" alt="Illustration de Qu'est-ce que l'Hypnose" className='InfoIllu'/>
+              <h3>Qu'est-ce que l'hypnose ?</h3>
+            </Paper>
+          </div>
           <Dialog onClose={(evt) => setOpen1(false)} open={open1}>
             <DialogTitle className='TitleDialog'><strong>Qu'est-ce que l'hypnose ?</strong></DialogTitle>
             <Divider/>
@@ -145,10 +147,12 @@ function MainPage() {
             <p>Cette capacité du cerveau nous permet de vivre des moments ennuyeux ou inconfortables de façon très agréable tout en ayant perdu la notion du temps.</p>
             </div>
           </Dialog>
-          <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen2(true)}>
-            <img src="/Hypnose_0008.jpg" alt="Illustration de l'hypnose pour quoi" className='InfoIllu' />
-            <h3>L'hypnose pour quoi ?</h3>
-          </Paper>
+          <div className='infoButtonDialog'>
+            <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen2(true)}>
+              <img src="/Hypnose_0008.jpg" alt="Illustration de l'hypnose pour quoi" className='InfoIllu' />
+              <h3>L'hypnose pour quoi ?</h3>
+            </Paper>
+          </div>
           <Dialog onClose={(evt) => setOpen2(false)} open={open2}>
               <DialogTitle className='TitleDialog'><strong>L'hypnose pour quoi ?</strong></DialogTitle>
               <Divider/>
@@ -163,10 +167,12 @@ function MainPage() {
                   </ul>
               </div>
           </Dialog>
+          <div className='infoButtonDialog'>
           <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen3(true)}>
             <img src="/Familie.jpg" alt="Illustration de l'hypnose pour qui" className='InfoIllu' id='FautQueCaRentre'/>
             <h3>L'hypnose pour qui ?</h3>
           </Paper>
+          </div>
           <Dialog onClose={(evt) => setOpen3(false)} open={open3}>
             <DialogTitle className='TitleDialog'><strong>L'hypnose pour qui ?</strong></DialogTitle>
             <Divider/>
@@ -174,10 +180,12 @@ function MainPage() {
               <p><strong>Pour toute personne motivée</strong> (enfants, adolescents, adultes, personnes agées) qui a la volonté de compléter sa boîte à outils pour être acteur de sa vie.</p>
             </div>
           </Dialog>
+          <div className='infoButtonDialog'>
           <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen4(true)}>
             <img src="/hypnosePourquoi.jpeg" alt="Illustration de l'hypnose pour qui" className='InfoIllu'/>
             <h3>L'hypnose comment ça marche ?</h3>
           </Paper>
+          </div>
           <Dialog onClose={(evt) => setOpen4(false)} open={open4}>
             <DialogTitle className='TitleDialog'><strong>L'hypnose comment ça marche ?</strong></DialogTitle>
             <Divider/>
@@ -185,19 +193,21 @@ function MainPage() {
               <p><strong>La douleur = 80% ressentie émotionnel</strong></p>
               <p>L'hypnose aide à modifier la perception des choses et transformer les émotions désagréables en quelque chose de plus confortable.</p>
             </div>
-	  </Dialog>
-          <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen5(true)}>
-            <img src="/money.jpg" alt="Illustration Séances et Tarifs" className='InfoIllu'/>
-            <h3>Séances et Tarifs</h3>
-          </Paper>
+	        </Dialog>
+          <div className='infoButtonDialog'>
+            <Paper elevation={15} className='InfoElem' onClick={(evt) => setOpen5(true)}>
+              <img src="/money.jpg" alt="Illustration Séances et Tarifs" className='InfoIllu'/>
+              <h3>Séances et Tarifs</h3>
+            </Paper>
+          </div>
           <Dialog onClose={(evt) => setOpen5(false)} open={open5}>
             <DialogTitle className='TitleDialog'><strong>Séances et Tarifs</strong></DialogTitle>
             <Divider/>
               <div className='contentInfoDialog'>
-		  <p id="PrixInfoSeance"><b>60€/séance</b></p>
-  		  <p>Certaines mutuelles remboursent une partie de la consultation, renseignez-vous.</p>
-		  <p>Les séances ne sont pas prise en charge par l'Assurance Maladie, vous devez vous acquitter du montant de la consultation à chaque séance.</p>
-		      </div>
+		            <p id="PrixInfoSeance"><b>60€/séance</b></p>
+  		          <p>Certaines mutuelles remboursent une partie de la consultation, renseignez-vous.</p>
+		            <p>Les séances ne sont pas prise en charge par l'Assurance Maladie, vous devez vous acquitter du montant de la consultation à chaque séance.</p>
+		          </div>
          </Dialog>
 
         </Box>
@@ -215,7 +225,7 @@ function MainPage() {
         <h3>Où nous trouver ?</h3>
         <p>Le cabinet est situé au <b>2ème étage, 10 rue Jane Addams - 14280 ST CONTEST</b></p>
         <img src='ApercuCabinet.jpeg' alt='Photo du cabinet' className='PhotoCabinet'/>
-        <img src='carte.png' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
+        <img src='carte550.webp' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
       </div>
     </div>
   );

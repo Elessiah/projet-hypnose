@@ -93,14 +93,17 @@ div.MainPage-content {
 
 #Gladys {
     background-color: palevioletred;
+    cursor: pointer;
 }
 
 #Celine {
     background-color: lightblue;
+    cursor: pointer;
 }
 
 #Laurence {
     background-color: pink;
+    cursor: pointer;
 }
 
 .Info {
@@ -277,4 +280,8 @@ div.MainPage-content {
 
 #PrixInfoSeance {
     text-align: center;
+}
+
+.infoButtonDialog {
+    cursor: pointer;
 }

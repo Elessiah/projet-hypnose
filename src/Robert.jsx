@@ -21,7 +21,7 @@ function Robert() {
   let imageHead;
   
   if (windowWidth > 600)
-    imageHead = "headRobert.jpg";
+    imageHead = "headRobert.webp";
   else 
     imageHead =  "headRobert600.jpg";
 
@@ -91,7 +91,7 @@ function Robert() {
         <h3>Où nous trouver ?</h3>
         <p>Le cabinet est situé au <b>2ème étage, 10 rue Jane Addams - 14280 ST CONTEST</b></p>
         <img src='ApercuCabinet.jpeg' alt='Photo du cabinet' className='PhotoCabinet'/>
-        <img src='carte.png' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
+        <img src='carte550.webp' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
       </div>
     </div>
   );

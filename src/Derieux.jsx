@@ -20,7 +20,7 @@ function Derieux() {
   let imageHead;
   
   if (windowWidth > 600)
-    imageHead = "headDerieux.jpg";
+    imageHead = "headDerieux.webp";
   else 
     imageHead =  "headDerieux600.jpg";
 
@@ -113,7 +113,7 @@ function Derieux() {
           <h3>Où nous trouver ?</h3>
           <p>Le cabinet est situé au <b>2ème étage, 10 rue Jane Addams - 14280 ST CONTEST</b></p>
           <img src='ApercuCabinet.jpeg' alt='Photo du cabinet' className='PhotoCabinet'/>
-          <img src='carte.png' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
+          <img src='carte550.webp' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
       </div>
     </div>
   );

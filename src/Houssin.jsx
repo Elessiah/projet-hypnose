@@ -36,7 +36,7 @@ function Houssin() {
     <div className="Perso">
       <header className="Perso-header">
         <div className='headerBG'>
-          <img src="headHoussin.jpg" alt="Photo de Gwladys ROBERT, Céline HOUSSIN (mise en avant), et Laurence DERIEUX"/>
+          <img src="headHoussin.webp" alt="Photo de Gwladys ROBERT, Céline HOUSSIN (mise en avant), et Laurence DERIEUX"/>
           <IconButton onClick={(evt) => navigate('/')} id='HomeButton'>
             <HomeIcon id='HomeButtonIcon'/>
           </IconButton>
@@ -150,7 +150,7 @@ function Houssin() {
         <h3>Où nous trouver ?</h3>
         <p>Le cabinet est situé au <b>2ème étage, 10 rue Jane Addams - 14280 ST CONTEST</b></p>
         <img src='ApercuCabinet.jpeg' alt='Photo du cabinet' className='PhotoCabinet'/>
-        <img src='carte.png' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
+        <img src='carte550.webp' alt='Carte avec la position géographique du cabinet' className='carteCabinet'/>
       </div>
     </div>
   );

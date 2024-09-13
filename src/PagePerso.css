@@ -207,3 +207,12 @@ div.Presentation {
 #ConclusionCeline {
     font-size: 150%;
 }
+
+@media (max-width: 768px) {
+    .Perso-content{
+        min-width: none;
+    }
+    .Perso-text {
+        min-width: none;
+    }
+}
